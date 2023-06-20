@@ -1,1 +1,4 @@
-import { container } from './pageLoad.js';
+import './style.css';
+import { pageLoad } from './pageLoad.js';
+
+pageLoad();
