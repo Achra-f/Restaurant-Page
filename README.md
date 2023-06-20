@@ -1,1 +1,1 @@
-Restaurant Page using Objects, Classes, DOM, Webpack
+Restaurant Page built with JavaScript using Object Oriented Programming, JSON and DOM manipulation.
