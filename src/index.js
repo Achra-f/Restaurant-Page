@@ -1,1 +1,1 @@
-console.log('test index.js file.');
+import { container } from './pageLoad.js';
