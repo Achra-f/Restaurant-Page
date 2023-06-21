@@ -1,21 +1,28 @@
-function pageLoad() {
-    // Create and append elements to the DOM
-    const content = document.getElementById('content');
-  
-    const header = document.createElement('header');
-    header.textContent = 'Header';
-  
-    const contentImage = document.createElement('img');
-    contentImage.src = 'image.jpg';
-    contentImage.alt = 'Content Image';
-  
-    const footer = document.createElement('footer');
-    footer.textContent = 'Footer';
-  
-    // Append elements to the content container
-    content.appendChild(header);
-    content.appendChild(contentImage);
-    content.appendChild(footer);
+export class PageLoad {
+  constructor() {
+    this.header = document.querySelector('#header');
   }
-  
-  export { pageLoad };
+
+  createNavbar() {
+    const navbar = document.createElement('navbar');
+    const ul = document.createElement('ul');
+    const links = ['Home', 'Menu', 'Contact'];
+
+    for (let i = 0; i < links.length; i++) {
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = '#';
+      link.textContent = links[i];
+      link.id = `link-${i + 1}`;
+
+
+      li.appendChild(link);
+      ul.appendChild(li);
+    }
+
+    navbar.appendChild(ul);
+
+    this.header.appendChild(navbar);
+  }
+}

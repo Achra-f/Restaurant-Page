@@ -1,1 +1,1 @@
-Restaurant Page built with JavaScript using Object Oriented Programming, JSON and DOM manipulation.
+Restaurant Page built with JavaScript using Object Oriented Programming and DOM manipulation.
