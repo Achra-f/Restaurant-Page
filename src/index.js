@@ -1,10 +1,14 @@
 import './style.css';
 import { PageLoad } from "./pageLoad";
 import { Home } from "./home";
+import { Menu } from './menu';
+import { Contact} from './contact';
 
 
 const pageLoad = new PageLoad();
 const home = new Home();
+const menu = new Menu();
+const contact = new Contact();
 
 pageLoad.createNavbar();
 home.loadHome();
